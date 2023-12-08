@@ -23,7 +23,7 @@ export default function Navbar() {
   }, []); // Empty dependency array since there are no variables from the component scope used inside useEffect
 
   return (
-    <nav className="navbar bg-white dark:bg-primary text-primary dark:text-white flex-row-reverse">
+    <nav className="navbar duration-300 bg-white dark:bg-primary text-primary dark:text-white flex-col gap-y-3 min-[460px]:flex-row-reverse">
       <div>
         <Link href={"/"} className="text-xl btn btn-ghost">
           {/* <Image src={Logo} width={30} height={30} alt="logo" /> */}
@@ -69,7 +69,7 @@ export default function Navbar() {
             type="text"
             placeholder="ابحث..."
             dir="rtl"
-            className="input input-bordered w-24 md:w-auto bg-primary dark:bg-white text-white dark:text-primary placeholder:text-white dark:placeholder:text-primary placeholder:opacity-80"
+            className="input input-bordered w-24 duration-300 md:w-auto bg-primary dark:bg-white text-white dark:text-primary placeholder:text-white dark:placeholder:text-primary placeholder:opacity-80"
           />
         </div>
       </div>
