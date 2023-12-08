@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
-import Logo from '@/assets/logo.png';
+// import Logo from '@/assets/logo.png';
 
 // Component definition...
 export default function Navbar() {
@@ -25,8 +25,8 @@ export default function Navbar() {
   return (
     <nav className="navbar bg-white dark:bg-primary text-primary dark:text-white flex-row-reverse">
       <div>
-        <Link href={"/"} className="text-base btn btn-ghost">
-          <Image src={Logo} width={30} height={30} alt="logo" />
+        <Link href={"/"} className="text-xl btn btn-ghost">
+          {/* <Image src={Logo} width={30} height={30} alt="logo" /> */}
           قطاع التدريب والتطوير
         </Link>
       </div>
