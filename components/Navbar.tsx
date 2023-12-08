@@ -1,12 +1,12 @@
 "use client";
 
 import { getProviders, signIn, signOut, useSession } from "next-auth/react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
-const Logo: StaticImageData = require("@/assets/logo.png");
+import Logo from '@/assets/logo.png';
 
 // Component definition...
 export default function Navbar() {
@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
           ) : (
             <svg
-              onClick={() => signOut()}
+              onClick={() => signIn()}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
