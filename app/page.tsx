@@ -11,7 +11,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto absolute top-0 left-1/2 -translate-x-1/2  grid items-center justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-[400px]:px-4 py-12">
+    <div className="container mx-auto grid items-center justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-[400px]:px-4 py-12">
       {[1, 2, 3, 4].map((index) => (
         <div key={index} className="card max-w-xs bg-base-100 shadow-xl">
           <figure>

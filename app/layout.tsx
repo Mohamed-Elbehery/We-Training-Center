@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "قطاع التدريب والتطوير",
   description: "Created by Mohamed El-Sharqawi",
-  icons: ["icon.png"],
 };
 
 export default function RootLayout({
