@@ -88,7 +88,7 @@ export default function Header() {
   return (
     <>
       <aside
-        className={`absolute min-w-[300px] top-0 bg-primary text-white h-screen p-4 transition-all z-[999] ${
+        className={`fixed min-w-[300px] top-0 bg-primary text-white h-screen p-4 transition-all z-[999] ${
           isMenuOpen ? "right-0" : "-right-[300px]"
         }`}
         id="test"
