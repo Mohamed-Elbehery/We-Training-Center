@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import Sidebar from "@/components/Sidebar";
 import AuthProvider from "@/components/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "قطاع التدريب والتطوير",
   description: "Created by Mohamed El-Sharqawi",
-  icons: ["logo.png"],
+  icons: ["icon.png"],
 };
 
 export default function RootLayout({
@@ -19,23 +18,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <link rel="icon" href="/icon.png" />
-        <link
-          rel="icon"
-          href="/icon<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
       </head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <AuthProvider>
-            <Navbar />
+        <AuthProvider>
+          <main className="flex items-center">
+            <Sidebar />
+
             {children}
-          </AuthProvider>
-        </ThemeProvider>
+          </main>
+        </AuthProvider>
       </body>
     </html>
   );

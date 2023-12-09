@@ -6,7 +6,6 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: ["class"],
   theme: {
     extend: {
       textColor: {
@@ -14,6 +13,7 @@ const config: Config = {
       }
     },
   },
+  darkMode: ['class', '[data-mode="light"]'],
   plugins: [require("daisyui")],
 }
 export default config
