@@ -5,6 +5,6 @@ export const GET = async () => {
     const users = await User.find({});
     return new Response(JSON.stringify(users), { status: 200 });
   } catch (err) {
-    console.log(err);
+    return new Response(JSON.stringify({ message: "Couldn't Fetch Users" }));
   }
 };
