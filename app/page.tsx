@@ -11,7 +11,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto absolute left-1/2 -translate-x-1/2  grid items-center justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-[400px]:px-4 pt-56 xl:pt-0">
+    <div className="container mx-auto absolute top-0 left-1/2 -translate-x-1/2  grid items-center justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-[400px]:px-4 py-12">
       {[1, 2, 3, 4].map((index) => (
         <div key={index} className="card max-w-xs bg-base-100 shadow-xl">
           <figure>
@@ -19,6 +19,7 @@ export default function Home() {
               src={problem}
               width={300}
               height={300}
+              className="max-h-[300px]"
               alt="Shoes"
               onLoadingComplete={handleLoadingComplete}
             />
